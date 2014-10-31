@@ -1,0 +1,23 @@
+#!/usr/bin/ruby
+
+args = Array.new()
+process_action = ""
+process_PID = 0
+
+ARGV.each do |arg|
+	case arg
+	when "-p" then process_action = "kill -STOP"
+	when "-r" then process_action = "kill -CONT"
+	when "-k" then process_action = "kill"
+	else args.push(arg) end
+end
+
+args.each do |arg|
+	target_processes = `ps aux | grep #{arg}`
+	target_processes.split("\n").each do |process|
+		`#{process_action} #{process.split(" ")[1].to_i}`
+	end
+end
+
+
+

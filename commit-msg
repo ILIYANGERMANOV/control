@@ -7,11 +7,11 @@ if not message.include?(".")
 	exit 1
 end
 sentence = message.split(".").first
-if sentence.capitalize != sentence
+if sentence[0].capitalize != sentence[0]
 	puts "The first sentence of the commit message begins in a capital letter and ends with a full stop!"
 	exit 1
 end
 if sentence.length > 50
-	puts "The first sentence of the commit message contains 50 characters or less!"
+	puts "The first sentence of the commit message should contain only 50 characters or less!"
 	exit 1
 end

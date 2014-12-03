@@ -1,0 +1,15 @@
+Installing commit-msg hook guide. (the commands are tested for Linux users only)
+Requirements:
+	1.Having Git installed.
+	2.Having Ruby installed.
+
+To install Git type: "sudo apt-get install git"
+To install Ruby type: "sudo apt-get install ruby"
+
+Setting up the hook:
+	1.Get into your repository directory.
+	2.CD to .git ("cd .git")
+	3.Then cd to the hooks folder ("cd hooks")
+	4.Place the "commit-msg" file there.
+	5.Add executable permissions to "commit-msg" ("chmod 755 commit-msg")
+	6.Your done!

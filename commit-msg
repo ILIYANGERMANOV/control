@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+message_file = ARGV[0]
+message = File.read(message_file)
+
+if not message.include?(".")
+	puts "Commit msg should be at least one sentence!"
+	exit 1
+end
+sentence = message.split(".").first
+if sentence.capitalize != sentence
+	puts "The first sentence of the commit message begins in a capital letter and ends with a full stop!"
+	exit 1
+end
+if sentence.length > 50
+	puts "The first sentence of the commit message contains 50 characters or less!"
+	exit 1
+end

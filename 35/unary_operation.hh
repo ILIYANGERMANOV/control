@@ -34,6 +34,17 @@ protected:
 
 public:
 	SqOperation();
+
 };
+
+class DupOperation: public UnaryOperation {
+
+protected:
+	double op(double val) const;
+
+public:
+	DupOperation();
+};
+
 
 #endif 

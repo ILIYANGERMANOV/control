@@ -38,3 +38,13 @@ double
 SqOperation::op(double val) const {
 	return val * val;
 }
+
+DupOperation::DupOperation()
+: UnaryOperation("&")
+{}
+
+double
+DupOperation::op(double val) const {
+	return val;
+}
+

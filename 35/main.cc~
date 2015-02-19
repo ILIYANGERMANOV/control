@@ -23,6 +23,8 @@ int main() {
 		cout << "BINARY ERROR!" << endl;
 	} catch(UnaryOperationError ex) {
 		cout << "UNARY ERROR!" << endl;
+	} catch(DivError ex) {
+		cout << "ZERO DEVISOR!" << endl;
 	}
 
 	return 0;

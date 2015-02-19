@@ -12,7 +12,7 @@ int main() {
 	Context context;
 	
 	context.op_add(new PlusOperation()).op_add(new MinusOperation()).op_add(new MulOperation()).op_add(new DivOperation()).op_add(new NegateOperation())
-	.op_add(new SqOperation());
+	.op_add(new SqOperation()).op_add(new DupOperation());
 	
 
 	Postfix postfix(context, cin);

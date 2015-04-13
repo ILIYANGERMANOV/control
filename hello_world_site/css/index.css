@@ -1,0 +1,147 @@
+#menu {
+    width: 100%;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+ 
+#menu ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+ 
+#menu ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #ccc;
+    width: 20%; /* fallback for non-calc() browsers */
+    width: calc(100% / 5);
+    box-sizing: border-box;
+}
+ 
+#menu ul li:first-child {
+    border-left: none;
+}
+ 
+#menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #616161;
+    padding: 10px 0;
+}
+
+/* unvisited link */
+#menu a:link {
+    background: #f0f0f0;
+}
+
+/* visited link */
+#menu a:visited {
+    background: #f0f0f0;
+}
+
+/* mouse over link */
+#menu a:hover {
+    background-color: #D0D0D0;
+	color: #282828;
+}
+
+/* selected link */
+#menu a:active {
+    color: white;
+} 
+
+
+#header h1 a {
+	text-decoration: none;
+	font-size: 50;
+    text-align: center;
+    display: block;
+	color: white;
+    margin: 0 auto;
+	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+img.displayed {
+	display: block;
+	width: 80%;
+	height: 200;
+	margin-top: 7%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content h3 {
+	display: inline;
+}
+
+#content {
+	margin-top: 7%;
+	margin-left: 7%;
+	margin-right: 7%;
+	height: 100%;
+	background-color: white;
+}
+
+#content {
+	color: #424242;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+	letter-spacing:0.1em;
+	text-align:center;
+	text-transform: lowercase;
+	padding-top: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 1%;
+	line-height: 145%;
+	font-size: 14.5pt;
+	font-variant: small-caps;
+}
+
+#tutorials {
+	text-align: left;
+}
+
+/* unvisited link */
+#tutorials a:link {
+    background: white;
+}
+
+/* visited link */
+#tutorials a:visited {
+    color: #3300CC;
+}
+
+/* mouse over link */
+#tutorials a:hover {
+    background-color: #D0D0D0;
+	color: #282828;
+}
+
+/* selected link */
+#tutorials a:active {
+    color: white;
+} 
+
+
+html { 
+  background: url(../resources/background1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

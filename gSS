@@ -88,8 +88,6 @@ def abort_if_not_dir
 	abort("Path \"#{ARGV[1]}\" is not directory!") if not File.directory?(ARGV[1])
 end
 
-def 
-
 if ARGV[0] == nil
 	puts "gSS v1.0"
 	puts "Pass1 is compolsury, Pass2 is optional."

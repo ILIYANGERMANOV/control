@@ -1,2 +1,2 @@
-software_engineering_2014.
-==========================
+This repository contains projects on which I have worked since 2014.
+====================================================================
